@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://particlesui.netlify.app/components/css/main.css" />
+    <link rel="stylesheet" href="../utility/main.css">
+    <link rel="stylesheet" href="filter.css" />
+</head>
+
+<body>
+    <div class="filter-wrapper">
+        <div class="flex-space-between p-0 filter-section">
+            <h2 class="filter-section">FIlter</h2>
+            <button class="btn-sm">Clear</button>
+        </div>
+        <div class="filter-section">
+            <h2>Price</h2>
+            <p class="text-gray flex-space-between p-0">
+                <span>50</span> <span>100</span> <span>150</span>
+            </p>
+            <input type="range" class="w-100" />
+        </div>
+        <div class=" filter-section">
+            <h3>Category</h3>
+            <form action="" class="flex-col">
+                <label for="men">
+                    <input type="checkbox" id="men" name="category" class="category" />
+                    <span>Men</span></label>
+
+                <label for="women">
+                    <input type="checkbox" id="women" name="category"   class="category" />
+                    <span>Women</span></label>
+            </form>
+
+        </div>
+        <div class="filter-section">
+            <h3>Rating</h3>
+            <form action="" class="flex-col">
+            <span>
+                <label for="rating-4">
+                    <input type="radio" id="rating-4" class="input-radio" name="rating" />4 star and
+                    above
+                </label>
+            </span>
+            <span>
+                <label for="rating-3">
+                    <input type="radio" id="rating-3" class="input-radio" name="rating" />4 star and above
+                </label>
+            </span>
+            <span>
+                <label for="rating-2">
+                    <input type="radio" id="rating-2" class="input-radio" name="rating" />4 star and above
+                </label>
+            </span>
+            <span>
+                <label for="rating-1">
+                    <input type="radio" id="rating-1" class="input-radio" name="rating" />4 star and above
+                </label>
+            </span>
+        </form>
+        </div>
+
+        <div class="filter-section">
+            <h3>Sort by</h3>
+            <form action="" class="flex-col">
+            <span>
+                <label for="sort-1">
+                    <input type="radio"  name="sort"  id="sort-1" class="input-radio"/>Price - High to Low</label>
+            </span>
+            <span>
+                <label for="sort-2">
+                    <input type="radio"  name="sort"  id="sort-2" class="input-radio"  />Price - Low to high</label>
+            </span>
+        </form>
+        </div>
+    </div>
+</body>
+
+</html>
