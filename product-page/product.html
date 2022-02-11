@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link
+      rel="stylesheet"
+      href="https://particlesui.netlify.app/components/css/main.css"
+    />
+    <link rel="stylesheet" href="product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="flex-space-around p-2 nav-bg-primary nav-wrapper">
+      <div class="inline-centre">
+        <h2 class="nav-text-primary">Title</h2>
+      </div>
+      <div>
+        <span class="input-search nav-input-width">
+          <span class="fas fa-search input-search-icon"></span>
+          <input
+            type="search"
+            class="input-search-input"
+            placeholder="Search"
+          />
+        </span>
+      </div>
+      <nav class="nav-action-btns">
+        <ul class="horizontal-align-centre nav-text-primary">
+          <li class="list-style-none">
+            <button class="btn-secondary btn-sm border-squre">Login</button>
+          </li>
+          <li class="list-style-none">
+            <button>
+              <a href="#" class="nav-btn-primary nav-text-primary btn-sm">
+                <span class="badge-container">
+                  <i class="fas fa-heart fs-md"></i>
+                  <span
+                    class="badge-number-round-x-sm badge-end-top nav-badge-primary"
+                    >1</span
+                  >
+                </span>
+              </a>
+            </button>
+          </li>
+          <li class="list-style-none">
+            <button>
+              <a
+                href="#"
+                class="inline-centre nav-text-primary btn-icon-text-left btn-sm nav-btn-primary"
+              >
+                <span class="badge-container">
+                  <i class="fas fa-shopping-cart fs-md"></i>
+                  <span
+                    class="badge-number-round-x-sm badge-end-top nav-badge-primary"
+                    >1</span
+                  >
+                </span>
+                <span>Cart</span>
+              </a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="d-flex gap-2">
+      <div>
+        <div class="filter-wrapper">
+          <div class="flex-space-between p-0 filter-section">
+            <h2 class="filter-section">FIlter</h2>
+            <button class="btn-sm">Clear</button>
+          </div>
+          <div class="filter-section">
+            <h3>Price</h3>
+            <p class="text-gray flex-space-between p-0">
+              <span>50</span> <span>100</span> <span>150</span>
+            </p>
+            <input type="range" class="w-100" />
+          </div>
+          <div class="filter-section">
+            <h3>Category</h3>
+            <form action="" class="flex-col">
+              <label for="men">
+                <input
+                  type="checkbox"
+                  id="men"
+                  name="category"
+                  class="category"
+                />
+                <span>Men</span></label
+              >
+
+              <label for="women">
+                <input
+                  type="checkbox"
+                  id="women"
+                  name="category"
+                  class="category"
+                />
+                <span>Women</span></label
+              >
+            </form>
+          </div>
+          <div class="filter-section">
+            <h3>Rating</h3>
+            <form action="" class="flex-col">
+              <span>
+                <label for="rating-4">
+                  <input
+                    type="radio"
+                    id="rating-4"
+                    class="input-radio"
+                    name="rating"
+                  />4 star and above
+                </label>
+              </span>
+              <span>
+                <label for="rating-3">
+                  <input
+                    type="radio"
+                    id="rating-3"
+                    class="input-radio"
+                    name="rating"
+                  />4 star and above
+                </label>
+              </span>
+              <span>
+                <label for="rating-2">
+                  <input
+                    type="radio"
+                    id="rating-2"
+                    class="input-radio"
+                    name="rating"
+                  />4 star and above
+                </label>
+              </span>
+              <span>
+                <label for="rating-1">
+                  <input
+                    type="radio"
+                    id="rating-1"
+                    class="input-radio"
+                    name="rating"
+                  />4 star and above
+                </label>
+              </span>
+            </form>
+          </div>
+
+          <div class="filter-section">
+            <h3>Sort by</h3>
+            <form action="" class="flex-col">
+              <span>
+                <label for="sort-1">
+                  <input
+                    type="radio"
+                    name="sort"
+                    id="sort-1"
+                    class="input-radio"
+                  />Price - High to Low</label
+                >
+              </span>
+              <span>
+                <label for="sort-2">
+                  <input
+                    type="radio"
+                    name="sort"
+                    id="sort-2"
+                    class="input-radio"
+                  />Price - Low to high</label
+                >
+              </span>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="product-items-container">
+        <div class="flex-align-centre py-2">
+          <h2>Showing All Product</h2>
+          <p>(showing 20 products)</p>
+        </div>
+
+        <div class="product-items">
+          <div class="vertical-product-card card-dismiss">
+            <div class="card-img flex-center">
+              <img
+                src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="blobkchain img"
+                class="vertical-product-card-img"
+              />
+            </div>
+            <div class="text-center">
+              <div class="card-img-heading">
+                <p class="card-heading">Men Premium Jacket</p>
+              </div>
+
+              <div class="card-content">
+                <h3>₹2000</h3>
+              </div>
+
+              <div>
+                <span class="card-btn">
+                  <button class="btn-block p-1">
+                    <a href="#" class="btn btn-primary">Go to Cart</a>
+                  </button>
+                </span>
+              </div>
+            </div>
+
+            <button
+              class="card-dismiss-btn card-wishlist-btn btn-x-sm border-round"
+            >
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+          <div class="vertical-product-card card-dismiss">
+            <div class="card-img flex-center">
+              <img
+                src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="blobkchain img"
+                class="vertical-product-card-img"
+              />
+            </div>
+            <div class="text-center">
+              <div class="card-img-heading">
+                <p class="card-heading">Men Premium Jacket</p>
+              </div>
+
+              <div class="card-content">
+                <h3 class="">₹2000</h3>
+              </div>
+
+              <div>
+                <span class="card-btn">
+                  <button class="btn-block p-1">
+                    <a href="#" class="btn btn-secondary">Add to Cart</a>
+                  </button>
+                </span>
+              </div>
+            </div>
+
+            <button
+              class="card-dismiss-btn card-wishlist-btn btn-x-sm border-round"
+            >
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+
+          <div class="vertical-product-card card-dismiss">
+            <div class="card-img flex-center">
+              <img
+                src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="blobkchain img"
+                class="vertical-product-card-img"
+              />
+            </div>
+            <div class="text-center">
+              <div class="card-img-heading">
+                <p class="card-heading">Men Premium Jacket</p>
+              </div>
+
+              <div class="card-content">
+                <h3>₹2000</h3>
+              </div>
+
+              <div>
+                <span class="card-btn">
+                  <button class="btn-block p-1">
+                    <a href="#" class="btn btn-secondary">Add to Cart</a>
+                  </button>
+                </span>
+              </div>
+            </div>
+
+            <button
+              class="card-dismiss-btn card-wishlist-btn btn-x-sm border-round"
+            >
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+          
+
+          <div class="vertical-product-card card-dismiss">
+            <div class="card-img flex-center">
+              <img
+                src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="blobkchain img"
+                class="vertical-product-card-img"
+              />
+            </div>
+            <div class="text-center">
+              <div class="card-img-heading">
+                <p class="card-heading">Men Premium Jacket</p>
+              </div>
+
+              <div class="card-content">
+                <h3>₹2000</h3>
+              </div>
+
+              <div>
+                <span class="card-btn">
+                  <button class="btn-block p-1">
+                    <a href="#" class="btn btn-secondary">Add to Cart</a>
+                  </button>
+                </span>
+              </div>
+            </div>
+
+            <button
+              class="card-dismiss-btn card-wishlist-btn btn-x-sm border-round"
+            >
+              <i class="fas fa-heart"></i>
+            </button>
+          </div>
+
+          <div class="card-body-md card-horizontal-md horizontal-product-card">
+            <div class="card-img flex-align-centre">
+              <img
+                src="https://images.unsplash.com/photo-1639475377520-b256a5d204b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+                alt="blobkchain img"
+                class="card-md-img horizontal-product-card-img"
+              />
+            </div>
+            <div class="card-content-container">
+              <div class="card-img-heading">
+                <h4 class="card-heading">Men premium Jacket</h4>
+              </div>
+
+              <div class="card-content">
+                <p>
+                  <span class="fs-md fw-500">2000</span>
+                  <span class="text-decoration-line-through text-gray"
+                    >3999</span
+                  >
+                </p>
+                <p>50% off</p>
+              </div>
+
+              <div class="card-footer">
+                <span class="card-btn card-horizontal-buttons">
+                  <button class="btn btn-secondary">Go to Cart</button>
+                  <button class="btn-block py-1">
+                    <a href="#" class="btn btn-secondary">
+                      Remove from Wishlist</a
+                    >
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body-md card-horizontal-md horizontal-product-card">
+            <div class="card-img flex-align-centre">
+              <img
+                src="https://images.unsplash.com/photo-1639475377520-b256a5d204b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+                alt="blobkchain img"
+                class="card-md-img horizontal-product-card-img"
+              />
+            </div>
+            <div class="card-content-container">
+              <div class="card-img-heading">
+                <h4 class="card-heading">Men premium Jacket</h4>
+              </div>
+
+              <div class="card-content">
+                <p>
+                  <span class="fs-md fw-500">2000</span>
+                  <span class="text-decoration-line-through text-gray"
+                    >3999</span
+                  >
+                </p>
+                <p>50% off</p>
+              </div>
+
+              <div class="card-footer">
+                <span class="card-btn card-horizontal-buttons">
+                  <button class="btn btn-primary">Go to Cart</button>
+                  <button class="btn-block btn-x-sm py-1">
+                    <a href="#" class="btn btn-secondary">
+                      Remove from Wishlist</a
+                    >
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
