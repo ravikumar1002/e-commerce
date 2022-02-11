@@ -1,0 +1,15 @@
+:root {
+  --white-color: white;
+  --white-bg: #f7f7f7;
+
+  --gray-color: gray;
+  --gray-bg: gray;
+
+  --red-color: rgb(241, 44, 44);
+  --red-bg: rgba(240, 21, 21, 0.979);
+
+  --transparent-bg: transparent;
+
+  --primary-color: #1c71fa;
+  --primary-bg: #3b82f6;
+}

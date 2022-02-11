@@ -1,0 +1,25 @@
+
+.btn{
+    width: 100%;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+  }
+  
+  .btn-secondary{
+    color: var(--white-color);
+    background-color: var(--gray-bg);
+  
+  }
+  
+  .btn-primary{
+    color: var(--white-color);
+    background-color: var(--primary-bg);
+  }
+  
+  .btn-outline{
+    border: 1px solid var(--gray-bg);
+    color: var(--gray-color);
+  }
+  
