@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://particlesui.netlify.app/components/css/main.css"
+    />
+    <link rel="stylesheet" href="../utility/main.css">
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="flex-space-around p-2 nav-bg-primary">
+      <div class="inline-centre">
+        <h2 class="nav-text-primary">Title</h2>
+      </div>
+      <div>
+        <span class="input-search nav-input-width">
+          <span class="fas fa-search input-search-icon"></span>
+          <input
+            type="search"
+            class="input-search-input"
+            placeholder="Search"
+          />
+        </span>
+      </div>
+      <nav class="nav-action-btns">
+        <ul class="horizontal-align-centre nav-text-primary">
+          <li class="list-style-none">
+            <button class="btn-secondary btn-sm btn">Login</button>
+          </li>
+          <li class="list-style-none">
+            <button >
+              <a href="#" class="nav-btn-primary nav-text-primary btn-sm">
+                <span class="badge-container">
+                  <i class="fas fa-heart fs-md"></i>
+                  <span
+                    class="badge-number-round-x-sm badge-end-top nav-badge-primary"
+                    >1</span
+                  >
+                </span>
+              </a>
+            </button>
+          </li>
+          <li class="list-style-none">
+            <button>
+              <a
+                href="#"
+                class="inline-centre nav-text-primary btn-icon-text-left btn-sm nav-btn-primary"
+              >
+                <span class="badge-container">
+                  <i class="fas fa-shopping-cart fs-md"></i>
+                  <span
+                    class="badge-number-round-x-sm badge-end-top nav-badge-primary"
+                    >1</span
+                  >
+                </span>
+                <span>Cart</span>
+              </a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="modal-container login-position">
+        <div class="login-wrapper flex-col login-container-style">
+          <div>
+            <h2 class="text-center">Login</h2>
+          </div>
+          <form action="">
+          <div class="flex-col">           
+            <label for="email">Email address</label>
+            <input type="email" id="email" class="fs-sm input-padding" placeholder="ecommerce@gmail.com" required/>
+          </div>
+          <div class="flex-col">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="fs-sm input-padding" required/>
+          </div>
+        </form>
+          <div class="flex-space-between p-0">
+            <span>
+              <label for="remember-me">
+                <input type="checkbox" id="remember-me" />
+                <span>Remember me</span></label
+              >
+            </span>
+            <span>
+              <a href="#" class="text-underline-none">Forget Your Password?</a>
+            </span>
+          </div>
+
+          <div>
+            <button class="btn btn-primary">Login</button>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn-icon-text-right text-underline-none centre"
+              >Create New Account <i class="fas fa-angle-right fs-md"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
