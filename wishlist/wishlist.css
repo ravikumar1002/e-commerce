@@ -1,0 +1,12 @@
+
+.grid-center-columns{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fill, 14rem);
+}
+
+.wishlist-page{
+    gap: 4rem 2rem;
+    padding: 1rem 3rem; 
+}
