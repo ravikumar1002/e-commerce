@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://particlesui.netlify.app/components/css/main.css"
+    />
+    <link rel="stylesheet" href="../utility/main.css" />
+    <link rel="stylesheet" href="cart.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="flex-space-around p-2 nav-bg-primary">
+      <div class="inline-centre">
+        <h2 class="nav-text-primary">Title</h2>
+      </div>
+      <div>
+        <span class="input-search nav-input-width">
+          <span class="fas fa-search input-search-icon"></span>
+          <input
+            type="search"
+            class="input-search-input"
+            placeholder="Search"
+          />
+        </span>
+      </div>
+      <nav class="nav-action-btns">
+        <ul class="horizontal-align-centre nav-text-primary">
+          <li class="list-style-none">
+            <button class="btn-secondary btn-sm border-squre">Login</button>
+          </li>
+          <li class="list-style-none">
+            <button>
+              <a href="#" class="nav-btn-primary nav-text-primary btn-sm">
+                <span class="badge-container">
+                    <i class="fas fa-heart fs-md"></i>
+                    <span class="badge-number-round-x-sm badge-end-top nav-badge-primary">1</span>
+                </span>
+              </a>
+            </button>
+          </li>
+          <li class="list-style-none">
+            <button>
+              <a href="#" class="inline-centre nav-text-primary btn-icon-text-left btn-sm nav-btn-primary ">
+                <span class="badge-container">
+                    <i class="fas fa-shopping-cart fs-md"></i>
+                    <span class="badge-number-round-x-sm badge-end-top nav-badge-primary">1</span>
+                </span>
+                <span>Cart</span>
+              </a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+        <div>
+            <h2 class="text-center py-2 ">My Cart</h2>
+        </div>
+        <div class="centre gap-2">
+            <div>
+                <div class="card-body-md card-horizontal-md horizontal-product-card">
+                    <div class="card-img flex-align-centre ">
+                      <img
+                        src="https://images.unsplash.com/photo-1639475377520-b256a5d204b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+                        alt="blobkchain img" class="card-md-img horizontal-product-card-img" />
+                    </div>
+                    <div class="card-content-container">
+                      <div class="card-img-heading">
+                        <h4 class="card-heading">Men premium Jacket</h4>
+                      </div>
+                
+                      <div class="card-content">
+                        <p>
+                            <span class="fs-md fw-500">2000</span>
+                            <span class="text-decoration-line-through text-gray"
+                              >3999</span
+                            >
+                          </p>
+                        <p>50% off</p>
+                        <p class="flex-align-centre gap-2"><span>Quantity:</span> <button class="btn btn-primary">+</button><span
+                          class="current-qty-no">1</span> <button class="btn btn-primary">-</button></p>
+                      </div>
+                
+                      <div class="card-footer ">
+                        <span class="card-btn card-horizontal-buttons">
+                            <button class="btn-block  p-1">
+                                <a href="#" class="btn btn-secondary">Remove from Cart</a>
+                            </button>
+                         <button class="btn-block  p-1">
+                            <a href="#" class="btn btn-outline">Move to wishlist</a>
+                        </button>
+                          
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="cart-price-details">
+                <h3 class="p-1">PRICE DETAILS</h3>
+                <hr>
+                <div>
+                    <p class="flex-space-between"><span>Price(2 Items)</span> <span>$4999</span></p>
+                    <p class="flex-space-between"><span>Discount</span> <span> -$499</span></p>
+                    <p class="flex-space-between"><span>Delivery Charges</span> <span>$49</span></p>
+                </div>
+                <hr>
+                <h3 class="flex-space-between"><span>TOTAL AMOUNT</span> <span>$9</span></h3>
+                <hr>
+                <p class="p-1">you will save on this order $0.9 </p>
+                <div class="btn-block p-1">
+                    <button class=" btn btn-primary ">
+                        Place Order
+                    </button>
+                </div>
+               
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+  </body>
+</html>
