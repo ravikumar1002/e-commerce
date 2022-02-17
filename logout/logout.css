@@ -2,14 +2,14 @@ html {
   background-color: var(--white-bg);
 }
 
-.profile-wrapper {
+.logout-wrapper {
   width: 25rem;
   padding: 2rem;
   gap: 1rem;
   background-color: var(--white-color);
 }
 
-.profile-position {
+.logout-position {
   height: calc(100vh - 5rem);
 }
 
