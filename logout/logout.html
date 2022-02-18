@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signup</title>
+    <title>Logout</title>
     <link rel="stylesheet" href="https://particlesui.netlify.app/components/css/main.css">
     <link rel="stylesheet" href="../utility/main.css" />
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="logout.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -34,9 +34,7 @@
       </div>
       <nav class="nav-action-btns">
         <ul class="horizontal-align-centre nav-text-primary">
-          <li class="list-style-none">
-            <button><a href="../login/login.html" class="btn btn-secondary btn-sm border-squre">Login</a></button>
-          </li>
+          
           <li class="list-style-none">
             <button>
               <a href="../wishlist/wishlist.html" class="nav-btn-primary nav-text-primary btn-sm">
@@ -54,19 +52,7 @@
                     <i class="fas fa-shopping-cart fs-md"></i>
                     <span class="badge-number-round-x-sm badge-end-top nav-badge-primary">1</span>
                 </span>
-              </a>
-            </button>
-          </li>
-          <li class="list-style-none">
-            <button>
-              <a
-                href="../logout/logout.html"
-                class="inline-centre nav-text-primary btn-icon-text-left btn-sm nav-btn-primary"
-              >
-                <span class="badge-container">
-                  <i class="fas fa-user fs-md"></i>
-                </span>
-                
+                <span>Cart</span>
               </a>
             </button>
           </li>
@@ -75,37 +61,24 @@
     </header>
 
     <main>
-        <div class="modal-container  login-position">
-            <div class="login-wrapper flex-col ">         
+        <div class="modal-container  logout-position">
+            <div class="logout-wrapper flex-col ">         
             <div>
-                <h2 class="text-center">Signup</h2>
+                <h2 class="text-center">Accounts Details</h2>
             </div>
-            <div class="flex-col">
-                <label for="email">Email address</label>
-                <input type="email" id="email" class="fs-sm input-padding" required>
+            <div class="flex-col profile-user-details">
+                <p> <span> Name :</span>  Customer</p>
+                <p> <span> phone :</span> 256256256 </p>
+                <p> <span> Address :</span> Web</p>
+                <p> <span> Email :</span> Webduniya@shop.com</p>
             </div>
-            <div class="flex-col">
-                <label for="password">Password</label>
-                <input type="password" id="password" class="fs-sm input-padding" required>
-            </div>
-            <div class="flex-space-between p-0">
-                <span>
-                   <label for="remember-me"> <input type="checkbox"id="remember-me" required> <span>I accept all Terms & Conditions</span></label>
-                </span>
-            </div>
-
             <div>
                 <button class="btn btn-primary">
-                    Create New Account
+                    Logout
                 </button>    
             </div>
-            <div class="text-center">
-                <a href="../login/login.html" class="btn-icon-text-right text-underline-none centre ">Already have an account <i class="fas fa-angle-right fs-md"></i></a>
-            </div>
-
         </div>
         </div>
-       
     </main>
   </body>
 </html>
