@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logout</title>
+    <link rel="stylesheet" href="https://particlesui.netlify.app/components/css/main.css">
+    <link rel="stylesheet" href="../utility/main.css" />
+    <link rel="stylesheet" href="logout.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="flex-space-around p-2 nav-bg-primary">
+      <div class="inline-centre">
+        <h2 ><a href="../index.html" class="nav-text-primary text-decoration-none">Store</a></h2>
+      </div>
+      <div>
+        <span class="input-search nav-input-width">
+          <span class="fas fa-search input-search-icon"></span>
+          <input
+            type="search"
+            class="input-search-input"
+            placeholder="Search"
+          />
+        </span>
+      </div>
+      <nav class="nav-action-btns">
+        <ul class="horizontal-align-centre nav-text-primary">
+          
+          <li class="list-style-none">
+            <button>
+              <a href="../wishlist/wishlist.html" class="nav-btn-primary nav-text-primary btn-sm">
+                <span class="badge-container">
+                    <i class="fas fa-heart fs-md"></i>
+                    <span class="badge-number-round-x-sm badge-end-top nav-badge-primary">1</span>
+                </span>
+              </a>
+            </button>
+          </li>
+          <li class="list-style-none">
+            <button>
+              <a href="../cart/cart.html" class="inline-centre nav-text-primary btn-icon-text-left btn-sm nav-btn-primary ">
+                <span class="badge-container">
+                    <i class="fas fa-shopping-cart fs-md"></i>
+                    <span class="badge-number-round-x-sm badge-end-top nav-badge-primary">1</span>
+                </span>
+                <span>Cart</span>
+              </a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <div class="modal-container  logout-position">
+            <div class="logout-wrapper flex-col ">         
+            <div>
+                <h2 class="text-center">Accounts Details</h2>
+            </div>
+            <div class="flex-col profile-user-details">
+                <p> <span> Name :</span>  Customer</p>
+                <p> <span> phone :</span> 256256256 </p>
+                <p> <span> Address :</span> Web</p>
+                <p> <span> Email :</span> Webduniya@shop.com</p>
+            </div>
+            <div>
+                <button class="btn btn-primary">
+                    Logout
+                </button>    
+            </div>
+        </div>
+        </div>
+    </main>
+  </body>
+</html>
