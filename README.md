@@ -15,6 +15,7 @@
  - Wishlist page
  - Login apge
  - SignUp page
+ - Logout page
  
  ## Live Link -
  
